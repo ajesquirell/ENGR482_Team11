@@ -565,11 +565,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: ENGR482_Team11
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: D:\Austin\Documents\Hololens\ENGR482_Team11\ENGR482_Team11\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 8032cca6d8ded501
   metroApplicationDescription: ENGR482_Team11
   wsaImages: {}
   metroTileShortName: 
