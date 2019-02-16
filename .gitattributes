@@ -50,9 +50,9 @@
 *.tiff filter=lfs diff=lfs merge=lfs -text
 
 # Treat as binary files to avoid git merging them automatically
-*.unity binary
-*.prefab binary
-*.asset binary
+#*.unity binary
+#*.prefab binary
+#*.asset binary
 
 # Smart merge stuff
 *.mat merge=unityyamlmerge eol=lf
