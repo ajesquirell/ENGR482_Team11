@@ -565,7 +565,7 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: ENGR482_Team11
   metroPackageVersion: 
-  metroCertificatePath: D:\Austin\Documents\Hololens\ENGR482_Team11\ENGR482_Team11\Assets\WSATestCertificate.pfx
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany

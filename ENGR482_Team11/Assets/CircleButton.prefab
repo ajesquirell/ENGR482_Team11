@@ -27,7 +27,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1580844895898678
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,8 +121,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1580844895898678}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.07, y: -0.229, z: -0.1385}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4741217161319992}
   - {fileID: 4045062262396792}
@@ -162,14 +162,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1820333246347296}
-  m_LocalRotation: {x: 0, y: 0.24014333, z: 0, w: 0.97073746}
-  m_LocalPosition: {x: -1, y: 1, z: 1}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4415358915469728}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 27.79, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23011278037581168
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -346,7 +346,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1356794436685834}
-  m_Text: 'Station 1: Head'
+  m_Text: Hello
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -359,7 +359,7 @@ TextMesh:
   m_Font: {fileID: 12800000, guid: 86574c70442309b45be5a1c37a37a40b, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4278221311
+    rgba: 4294967295
 --- !u!114 &114028004023545408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -400,7 +400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffc886b5774e0184990bff0ce51eaf92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Profile: {fileID: 11400000, guid: 2ee1717716a31e94ca949b3506216b4c, type: 2}
+  Profile: {fileID: 11400000, guid: 470603dbc72fbc14f8c1b69d314faf75, type: 2}
   TextMesh: {fileID: 102999891068218110}
   OverrideFontStyle: 0
   Style: 0
@@ -410,7 +410,7 @@ MonoBehaviour:
   Size: 72
   OverrideOffset: 0
   alpha: 1
-  disableText: 0
+  disableText: 1
 --- !u!114 &114776147498804614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -441,7 +441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Profile: {fileID: 11400000, guid: c7079c29554cb374294a5e28695efa0b, type: 2}
-  TargetTransform: {fileID: 4992156184492654}
+  TargetTransform: {fileID: 0}
   Renderer: {fileID: 23304077078897404}
 --- !u!114 &114923822525732462
 MonoBehaviour:
