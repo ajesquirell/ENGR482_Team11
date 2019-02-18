@@ -166,6 +166,7 @@ GameObject:
   - component: {fileID: 314990433}
   - component: {fileID: 314990432}
   - component: {fileID: 314990431}
+  - component: {fileID: 314990436}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -240,6 +241,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 4.991, y: -57.788002, z: -82.991005}
+--- !u!114 &314990436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 314990430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e77a98cf320fe9340a55eecfe4567ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonState: 4
+  buttonPressFilter: 1
+  requireGaze: 1
+  MainCollider: {fileID: 0}
+  MainRenderer: {fileID: 0}
 --- !u!1 &391021681
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,6 +268,8 @@ GameObject:
   - component: {fileID: 391021684}
   - component: {fileID: 391021683}
   - component: {fileID: 391021682}
+  - component: {fileID: 391021687}
+  - component: {fileID: 391021686}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -325,6 +344,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &391021686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 391021681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffc886b5774e0184990bff0ce51eaf92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Profile: {fileID: 11400000, guid: 470603dbc72fbc14f8c1b69d314faf75, type: 2}
+  TextMesh: {fileID: 0}
+  OverrideFontStyle: 0
+  Style: 0
+  OverrideAnchor: 0
+  Anchor: 0
+  OverrideSize: 0
+  Size: 72
+  OverrideOffset: 0
+  alpha: 1
+  disableText: 0
+--- !u!114 &391021687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 391021681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e77a98cf320fe9340a55eecfe4567ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonState: 4
+  buttonPressFilter: 1
+  requireGaze: 1
+  MainCollider: {fileID: 391021683}
+  MainRenderer: {fileID: 391021682}
 --- !u!1001 &1690987602
 Prefab:
   m_ObjectHideFlags: 0
@@ -383,6 +440,8 @@ GameObject:
   - component: {fileID: 1714159562}
   - component: {fileID: 1714159561}
   - component: {fileID: 1714159560}
+  - component: {fileID: 1714159566}
+  - component: {fileID: 1714159565}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -456,6 +515,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 45, y: 50, z: 0}
+--- !u!114 &1714159565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1714159559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86772d5ca853e924ba484bc960537c04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Profile: {fileID: 11400000, guid: 138c8fa3d15570345a5d8d819ea417ca, type: 2}
+  TargetTransform: {fileID: 1714159563}
+  Renderer: {fileID: 1714159560}
+--- !u!114 &1714159566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1714159559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e77a98cf320fe9340a55eecfe4567ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonState: 4
+  buttonPressFilter: 1
+  requireGaze: 1
+  MainCollider: {fileID: 1714159561}
+  MainRenderer: {fileID: 1714159560}
 --- !u!1001 &1749174071
 Prefab:
   m_ObjectHideFlags: 0
