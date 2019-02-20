@@ -9,35 +9,37 @@ namespace HoloToolkit.Unity.InputModule
     /// </summary>
     public class IThinkThisWillWork : MonoBehaviour, IFocusable
     {
+        [Tooltip("Rotation speed controls the speed of rotation. (Degrees/sec I think)")]
+        public float rotationSpeed = 1.0f;
+
+        public bool rotating;
 
         // Use this for initialization
         void Start()
         {
-
+            Debug.Log("Rotation Speed is: " + rotationSpeed);
         }
 
         // Update is called once per frame
         void Update()
         {
-
+            if(rotating)
+            {
+                // Rotate object along the Y axis using.
+                transform.Rotate(Vector3.up * rotationSpeed, Space.World);
+            }
         }
 
         public void OnFocusEnter()
         {
-            for (int i = 0; i < defaultMaterials.Length; i++)
-            {
-                // Rotate object on Y-axis when gaze enters.
-                
-            }
+            // Rotate object on Y-axis when gaze enters.
+            rotating = true;    
         }
 
         public void OnFocusExit()
         {
-            for (int i = 0; i < defaultMaterials.Length; i++)
-            {
-                // Remove highlight on material when gaze exits.
-                
-            }
+            // Stop rotation when gaze exits.
+            rotating = false;    
         }
     }
 
