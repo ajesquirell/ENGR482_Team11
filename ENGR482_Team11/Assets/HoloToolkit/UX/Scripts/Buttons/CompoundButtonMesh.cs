@@ -187,7 +187,7 @@ namespace HoloToolkit.Unity.Buttons
                 datum = Profile.ButtonStates[(int)ButtonStateEnum.Pressed];
             }
 
-            if (TargetTransform != null)
+            if (TargetTransform != null) 
             {
                 if (smooth)
                 {
