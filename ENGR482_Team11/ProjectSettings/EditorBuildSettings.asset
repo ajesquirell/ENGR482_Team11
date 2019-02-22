@@ -8,3 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Main.unity
     guid: 904a3abb63ba08a4b939756f212a846c
+  - enabled: 1
+    path: Assets/HoloToolkit-Examples/SpatialMapping/Scenes/TapToPlace.unity
+    guid: 6b75bb485379146429e95e2a402d8129

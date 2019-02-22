@@ -16,7 +16,7 @@ MonoBehaviour:
   SmoothStateChanges: 1
   StickyPressedEvents: 0
   StickyPressedTime: 0.5
-  AnimationSpeed: 1
+  AnimationSpeed: 0.509
   ButtonStates:
   - Name: Pressed
     ActiveState: 0
