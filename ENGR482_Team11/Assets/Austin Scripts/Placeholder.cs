@@ -38,11 +38,13 @@ using HoloToolkit.Unity;
 
         public void OnInputClicked(InputClickedEventData eventData)
         {
-            Transform instance = Instantiate(prefab);
+            Transform instance = Instantiate(this.prefab);
 
             instance.gameObject.transform.position =
                 GazeManager.Instance.GazeOrigin +
                 GazeManager.Instance.GazeNormal * 1.5f;
+
+        ++this.count;
         }
     bool loaded;
     int count;
