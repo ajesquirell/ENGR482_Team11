@@ -13,7 +13,7 @@ public class Instantiate_Outputs : MonoBehaviour, IInputClickHandler {
     {
         Debug.Log("Input: Pressed");
 
-        if (!active)
+        if (!active && outputCollection != null)
         {
             instantiatedObj = Instantiate(outputCollection, outputCollection.transform.position, outputCollection.transform.rotation);
             active = true;
