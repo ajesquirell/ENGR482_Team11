@@ -126,7 +126,7 @@ namespace HoloToolkit.Unity.SpatialMapping
             interpolator.SetTargetPosition(placementPosition);
 
             // Rotate this object to face the user.
-            interpolator.SetTargetRotation(Quaternion.Euler(0, cameraTransform.localEulerAngles.y, 0));
+            //interpolator.SetTargetRotation(Quaternion.Euler(0, cameraTransform.localEulerAngles.y, 0));
         }
 
         public virtual void OnInputClicked(InputClickedEventData eventData)
