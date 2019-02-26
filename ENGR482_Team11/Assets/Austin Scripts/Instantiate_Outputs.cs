@@ -35,4 +35,6 @@ public class Instantiate_Outputs : MonoBehaviour, IInputClickHandler {
 	void Update () {
 		
 	}
+
+    
 }

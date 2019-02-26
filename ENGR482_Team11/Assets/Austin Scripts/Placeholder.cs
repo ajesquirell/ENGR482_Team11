@@ -32,7 +32,6 @@ using HoloToolkit.Unity;
                  WorldAnchorManager.Instance.AttachAnchor(instance.gameObject, id);
                 }
                 this.loaded = true;
-                this.count = ids.Length;
             }
         }
 
@@ -43,11 +42,8 @@ using HoloToolkit.Unity;
             instance.gameObject.transform.position =
                 GazeManager.Instance.GazeOrigin +
                 GazeManager.Instance.GazeNormal * 1.5f;
-
-        ++this.count;
         }
     bool loaded;
-    int count;
     }
 //}
 
