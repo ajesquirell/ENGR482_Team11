@@ -15,7 +15,7 @@ public class Instantiate_Outputs : MonoBehaviour, IInputClickHandler {
 
         if (!active && outputCollection != null)
         {
-            instantiatedObj = Instantiate(outputCollection, outputCollection.transform.position, outputCollection.transform.rotation);
+            instantiatedObj = Instantiate(outputCollection, transform.position, outputCollection.transform.rotation);
             active = true;
         }
         else
