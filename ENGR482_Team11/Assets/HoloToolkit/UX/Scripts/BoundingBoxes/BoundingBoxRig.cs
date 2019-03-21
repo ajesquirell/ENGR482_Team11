@@ -285,6 +285,10 @@ namespace HoloToolkit.Unity.UX
             destroying = true;
             ShowRig = false;
             ClearHandles();
+            //==========I'm inserting this=======
+            //Destroy(appBarInstance);
+            Destroy(boxInstance);
+            //============================
         }
 
         private void UpdateBoundsPoints()
