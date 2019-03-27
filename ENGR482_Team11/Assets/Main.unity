@@ -500,28 +500,6 @@ MonoBehaviour:
   AnchorDebugText: {fileID: 0}
   ShowDetailedLogs: 1
   PersistentAnchors: 1
---- !u!1 &774698339 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1062521213671926, guid: 43c7dee9ff353564397be34a39a4c1bb,
-    type: 2}
-  m_PrefabInternal: {fileID: 1535063098}
---- !u!114 &774698340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 774698339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c62fd7a55ba7458499b69cae18f83806, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PersistentKeywords: 0
-  RecognizerStart: 0
-  Keywords:
-  - Keyword: Make Bigger
-    KeyCode: 43
-  recognitionConfidenceLevel: 1
 --- !u!4 &774698341 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4765113722931942, guid: 43c7dee9ff353564397be34a39a4c1bb,
@@ -610,6 +588,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
+  - Keyword: Close one
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1191244424}
+          m_MethodName: CloseOutputs
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
   IsGlobalListener: 0
   PersistentKeywords: 0
 --- !u!114 &933358833
@@ -623,6 +618,124 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cae8f3c88e9704a4393cb8d904b62372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &960256239
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 960256244}
+  - component: {fileID: 960256243}
+  - component: {fileID: 960256242}
+  - component: {fileID: 960256241}
+  - component: {fileID: 960256240}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!328 &960256240
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 960256239}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: d0ca8297db3275a49987b43b2420caff, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 1
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+--- !u!23 &960256241
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 960256239}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &960256242
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 960256239}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &960256243
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 960256239}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &960256244
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 960256239}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.21, y: 0.03, z: 2.32}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1191244417
 Prefab:
   m_ObjectHideFlags: 0
@@ -666,7 +779,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2046346320}
+      objectReference: {fileID: 2119784131}
     - target: {fileID: 114456112912401612, guid: 4156b7d6f9217a34197cc58118b33bdb,
         type: 2}
       propertyPath: KeywordSource
@@ -745,42 +858,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7d6513c2cdf97f409654a2a4114d9b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Keywords:
-  - Keyword: Close one
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1191244424}
-          m_MethodName: CloseOutputs
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+  Keywords: []
   IsGlobalListener: 0
   PersistentKeywords: 0
---- !u!1 &1191244422 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1634700096724818, guid: 4156b7d6f9217a34197cc58118b33bdb,
-    type: 2}
-  m_PrefabInternal: {fileID: 1191244417}
---- !u!114 &1191244423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1191244422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48925ea94df0c4547a983f05b237a763, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1191244424 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114017311975374608, guid: 4156b7d6f9217a34197cc58118b33bdb,
@@ -1026,15 +1106,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4765113722931942, guid: 43c7dee9ff353564397be34a39a4c1bb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 180.25
+      value: 180.276
       objectReference: {fileID: 0}
     - target: {fileID: 4765113722931942, guid: 43c7dee9ff353564397be34a39a4c1bb, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 70.17
+      value: 70.082
       objectReference: {fileID: 0}
     - target: {fileID: 4765113722931942, guid: 43c7dee9ff353564397be34a39a4c1bb, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -216.63
+      value: -216.781
       objectReference: {fileID: 0}
     - target: {fileID: 4765113722931942, guid: 43c7dee9ff353564397be34a39a4c1bb, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1171,12 +1251,10 @@ MonoBehaviour:
     KeyCode: 257
   - Keyword: Close one
     KeyCode: 49
-  - Keyword: Blue
-    KeyCode: 98
-  - Keyword: Reset All
-    KeyCode: 8
-  - Keyword: Reset All
-    KeyCode: 8
+  - Keyword: Open two
+    KeyCode: 258
+  - Keyword: Close two
+    KeyCode: 50
   recognitionConfidenceLevel: 1
 --- !u!4 &2017662695
 Transform:
@@ -1191,7 +1269,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &2046346320
+--- !u!21 &2119784131
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
