@@ -33,13 +33,22 @@ namespace HoloToolkit.Unity.InputModule
         public void OnFocusEnter()
         {
             // Rotate object on Y-axis when gaze enters.
-            rotating = true;    
+            rotating = true;
+            if (gameObject.GetComponent<Billboard>())
+                gameObject.GetComponent<Billboard>().enabled = false; //Disable billboarding to enable rotation
         }
 
         public void OnFocusExit()
         {
             // Stop rotation when gaze exits.
-            rotating = false;    
+            
+            if (gameObject.GetComponent<Billboard>())
+            {
+                StartCoroutine(ExecuteAfterTime(.3f));// wait a bit to make rotation smoother if gazing at edge of a disc or something and it rotates out of view
+                gameObject.GetComponent<Billboard>().enabled = true; //Enable billboarding again
+
+            }
+            rotating = false;
         }
 
         public void OnInputDown(InputEventData eventData)
@@ -51,6 +60,12 @@ namespace HoloToolkit.Unity.InputModule
         {
             //rotationSpeed = rotationSpeed / 2;
         }
+
+        IEnumerator ExecuteAfterTime(float time)
+        {
+            yield return new WaitForSeconds(time);
+        }
+
     }
 
 }

@@ -49,6 +49,7 @@ public class Instantiate_Outputs : MonoBehaviour, IInputClickHandler {
     {
         if (!active && outputCollection != null)
         {
+            //Transform location = Vector3.MoveTowards(transform.position, )
             instantiatedObj = Instantiate(outputCollection, transform.position, outputCollection.transform.rotation);
             active = true;
             //InstantiateOutputs();
