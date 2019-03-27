@@ -3,50 +3,55 @@
 
 using UnityEngine;
 
-namespace HoloToolkit.Unity.InputModule.Tests
+namespace HoloToolkit.Unity.InputModule
 {
     [RequireComponent(typeof(Renderer))]
     public class RootKeywords : MonoBehaviour, ISpeechHandler
     {
-        private Material cachedMaterial;
-        private Color defaultColor;
+        public void OnSpeechKeywordRecognized(SpeechEventData eventData)
+        {
+            
+        }
+
+        //private Material cachedMaterial;
+        //private Color defaultColor;
 
         private void Awake()
         {
-            cachedMaterial = GetComponent<Renderer>().material;
-            defaultColor = cachedMaterial.color;
+            //cachedMaterial = GetComponent<Renderer>().material;
+            //defaultColor = cachedMaterial.color;
         }
 
-        public void ChangeColor(string color)
-        {
-            switch (color.ToLower())
-            {
-                case "red":
-                    cachedMaterial.SetColor("_Color", Color.red);
-                    break;
-                case "blue":
-                    cachedMaterial.SetColor("_Color", Color.blue);
-                    break;
-                case "green":
-                    cachedMaterial.SetColor("_Color", Color.green);
-                    break;
-            }
-        }
+        //public void ChangeColor(string color)
+        //{
+        //    switch (color.ToLower())
+        //    {
+        //        case "red":
+        //            cachedMaterial.SetColor("_Color", Color.red);
+        //            break;
+        //        case "blue":
+        //            cachedMaterial.SetColor("_Color", Color.blue);
+        //            break;
+        //        case "green":
+        //            cachedMaterial.SetColor("_Color", Color.green);
+        //            break;
+        //    }
+        //}
 
 
-        public void ResetColor()
-        {
-            cachedMaterial.SetColor("_Color", defaultColor);
-        }
+        //public void ResetColor()
+        //{
+        //    cachedMaterial.SetColor("_Color", defaultColor);
+        //}
 
-        public void OnSpeechKeywordRecognized(SpeechEventData eventData)
-        {
-            ChangeColor(eventData.RecognizedText);
-        }
+        //public void OnSpeechKeywordRecognized(SpeechEventData eventData)
+        //{
+        //    ChangeColor(eventData.RecognizedText);
+        //}
 
         private void OnDestroy()
         {
-            DestroyImmediate(cachedMaterial);
+            //DestroyImmediate(cachedMaterial);
         }
     }
 }
