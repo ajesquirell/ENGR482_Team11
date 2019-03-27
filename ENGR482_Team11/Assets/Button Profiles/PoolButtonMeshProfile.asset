@@ -23,13 +23,13 @@ MonoBehaviour:
     StateColor: {r: 1, g: 1, b: 1, a: 0.49803922}
     StateValue: 0
     Offset: {x: 0, y: 0, z: 0}
-    Scale: {x: 0.9, y: 0.9, z: 0.9}
+    Scale: {x: 1, y: 1, z: 1}
   - Name: Targeted
     ActiveState: 1
     StateColor: {r: 1, g: 1, b: 1, a: 0.316}
     StateValue: 0
     Offset: {x: 0, y: 0, z: 0}
-    Scale: {x: 1.1, y: 1.1, z: 1.1}
+    Scale: {x: 1, y: 1, z: 1}
   - Name: Interactive
     ActiveState: 2
     StateColor: {r: 1, g: 1, b: 1, a: 0}

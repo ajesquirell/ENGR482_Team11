@@ -7,7 +7,7 @@ namespace HoloToolkit.Unity.InputModule
     /// <summary>
     /// Working off of the NavigationRotateResponder.cs and GazeResponder.cs to make a script that rotates an object when gaze input is active
     /// </summary>
-    public class IThinkThisWillWork : MonoBehaviour, IFocusable, IInputHandler
+    public class IThinkThisWillWork : MonoBehaviour, IFocusable//, IInputHandler
     {
         [Tooltip("Rotation speed controls the speed of rotation. (Degrees/sec I think)")]
         public float rotationSpeed = 1.0f;
@@ -51,15 +51,15 @@ namespace HoloToolkit.Unity.InputModule
             rotating = false;
         }
 
-        public void OnInputDown(InputEventData eventData)
-        {
-            //rotationSpeed = rotationSpeed * 2;
-        }
+        //public void OnInputDown(InputEventData eventData)
+        //{
+        //    //rotationSpeed = rotationSpeed * 2;
+        //}
 
-        public void OnInputUp(InputEventData eventData)
-        {
-            //rotationSpeed = rotationSpeed / 2;
-        }
+        //public void OnInputUp(InputEventData eventData)
+        //{
+        //    //rotationSpeed = rotationSpeed / 2;
+        //}
 
         IEnumerator ExecuteAfterTime(float time)
         {

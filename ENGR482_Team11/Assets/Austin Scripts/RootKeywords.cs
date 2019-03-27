@@ -13,6 +13,8 @@ namespace HoloToolkit.Unity.InputModule
             
         }
 
+        
+
         //private Material cachedMaterial;
         //private Color defaultColor;
 
