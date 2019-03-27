@@ -83,6 +83,7 @@ GameObject:
   - component: {fileID: 114250144360769174}
   - component: {fileID: 114782395496941424}
   - component: {fileID: 114655086124507316}
+  - component: {fileID: 114393593743863560}
   m_Layer: 5
   m_Name: Root Hologram Pool
   m_TagString: Untagged
@@ -458,6 +459,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 4
   rotating: 0
+--- !u!114 &114393593743863560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1628872688417566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b78c0d1b3230a94d8586beb5f7b36b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114402484298982874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -551,6 +563,40 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 114640112738152090}
           m_MethodName: CloseOutputs
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Lock two
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114393593743863560}
+          m_MethodName: lockRoot
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Unlock two
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114393593743863560}
+          m_MethodName: unlockRoot
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
