@@ -32,6 +32,10 @@ namespace HoloToolkit.Unity.Examples
         protected override void InputDown(GameObject obj, InputEventData eventData) {
             Debug.Log(obj.name + " : InputDown");
             txt.text = obj.name + " : InputDown";
+
+            var localPosition = obj.transform.localPosition;
+            localPosition.y += 0.1f;
+            obj.transform.localPosition = localPosition;
         }
 
         protected override void InputUp(GameObject obj, InputEventData eventData) {

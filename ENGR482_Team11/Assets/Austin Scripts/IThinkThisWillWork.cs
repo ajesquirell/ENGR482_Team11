@@ -44,12 +44,12 @@ namespace HoloToolkit.Unity.InputModule
 
         public void OnInputDown(InputEventData eventData)
         {
-            rotationSpeed = rotationSpeed * 2;
+            //rotationSpeed = rotationSpeed * 2;
         }
 
         public void OnInputUp(InputEventData eventData)
         {
-            rotationSpeed = rotationSpeed / 2;
+            //rotationSpeed = rotationSpeed / 2;
         }
     }
 

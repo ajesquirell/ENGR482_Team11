@@ -12,18 +12,8 @@ public class Instantiate_Outputs : MonoBehaviour, IInputClickHandler {
     public void OnInputClicked(InputClickedEventData eventData)
     {
         Debug.Log("Input: Pressed");
-
-        if (!active && outputCollection != null)
-        {
-            instantiatedObj = Instantiate(outputCollection, transform.position, outputCollection.transform.rotation);
-            active = true;
-        }
-        else
-        {
-            Destroy(instantiatedObj);
-            //Destroy(instantiatedObj.GetComponentsInChildren();
-            active = false;
-        }
+        InstantiateOutputs();
+        
     }
 
     // Use this for initialization
@@ -36,5 +26,47 @@ public class Instantiate_Outputs : MonoBehaviour, IInputClickHandler {
 		
 	}
 
+    //Toggle outputs - used for clicking
+    public void InstantiateOutputs()
+    {
+        if (!active && outputCollection != null)
+        {
+            //instantiatedObj = Instantiate(outputCollection, transform.position, outputCollection.transform.rotation);
+            //active = true;
+            OpenOutputs();
+        }
+        else
+        {
+            //Destroy(instantiatedObj);
+            //active = false;
+            CloseOutputs();
+        }
+    }
+
+
+    //The following commands do the same as above, but used for voice commands - one to only open, one to only close outputs
+    public void OpenOutputs()
+    {
+        if (!active && outputCollection != null)
+        {
+            instantiatedObj = Instantiate(outputCollection, transform.position, outputCollection.transform.rotation);
+            active = true;
+            //InstantiateOutputs();
+        }
+    }
+
+    public void CloseOutputs()
+    {
+        if (active)
+        {
+            Destroy(instantiatedObj);
+            active = false;
+            //InstantiateOutputs();
+        }
+    }
+
     
+
+    
+
 }
