@@ -41,5 +41,6 @@ public class Lock : MonoBehaviour {
         if (gameObject.GetComponent<TwoHandManipulatable>())
             gameObject.GetComponent<TwoHandManipulatable>().enabled = true;
 
+        WorldAnchorManager.Instance.RemoveAnchor(this.gameObject);
     }
 }
