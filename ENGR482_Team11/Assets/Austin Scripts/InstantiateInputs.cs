@@ -6,9 +6,8 @@ using HoloToolkit.Unity.InputModule;
 public class InstantiateInputs : MonoBehaviour
 {
 
-    public GameObject outputCollection;
-    private GameObject instantiatedInput;
-    bool active = false;
+    public GameObject rootHologram;
+    public bool active = false; //Meaning root hologram this goes along with shouldn't be in the scene
 
     // Use this for initialization
     void Start()
@@ -26,16 +25,14 @@ public class InstantiateInputs : MonoBehaviour
     //The following commands do the same as above, but used for voice commands - one to only open, one to only close outputs
     public void OpenOutputs()
     {
-        if (!active && outputCollection != null)
+        if (!active)
         {
-            //Transform location = Vector3.MoveTowards(transform.position, )
-            instantiatedInput = Instantiate(outputCollection, transform.position, outputCollection.transform.rotation);
+            rootHologram.SetActive(true);
             active = true;
 
-            instantiatedInput.gameObject.transform.position =
+            rootHologram.transform.position =
                 GazeManager.Instance.GazeOrigin +
                 GazeManager.Instance.GazeNormal * 1.5f;
-            //InstantiateOutputs();
         }
     }
 
@@ -43,9 +40,9 @@ public class InstantiateInputs : MonoBehaviour
     {
         if (active)
         {
-            Destroy(instantiatedInput);
+            // Destroy(instantiatedInput);
+            rootHologram.SetActive(false);
             active = false;
-            //InstantiateOutputs();
         }
     }
 
