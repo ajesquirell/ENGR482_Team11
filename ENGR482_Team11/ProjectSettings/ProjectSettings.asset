@@ -607,7 +607,7 @@ PlayerSettings:
       PicturesLibrary: False
       PrivateNetworkClientServer: True
       Proximity: False
-      RemovableStorage: False
+      RemovableStorage: True
       SharedUserCertificates: False
       SpatialPerception: True
       UserAccountInformation: False
