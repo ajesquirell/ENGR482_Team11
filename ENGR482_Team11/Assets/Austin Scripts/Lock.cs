@@ -11,7 +11,7 @@ public class Lock : MonoBehaviour {
     public string anchorName;
 	// Use this for initialization
 	void Start () {
-        WorldAnchorManager.Instance.AttachAnchor(this.gameObject, anchorName);
+        //WorldAnchorManager.Instance.AttachAnchor(this.gameObject, anchorName);
     }
 	
 	// Update is called once per frame
@@ -29,7 +29,7 @@ public class Lock : MonoBehaviour {
         if (gameObject.GetComponent<TwoHandManipulatable>())
             gameObject.GetComponent<TwoHandManipulatable>().enabled = false;
 
-        WorldAnchorManager.Instance.AttachAnchor(this.gameObject, anchorName);
+        //WorldAnchorManager.Instance.AttachAnchor(this.gameObject, anchorName);
     }
 
     public void unlockRoot()
@@ -42,6 +42,6 @@ public class Lock : MonoBehaviour {
         if (gameObject.GetComponent<TwoHandManipulatable>())
             gameObject.GetComponent<TwoHandManipulatable>().enabled = true;
 
-        WorldAnchorManager.Instance.RemoveAnchor(this.gameObject);
+        //WorldAnchorManager.Instance.RemoveAnchor(this.gameObject);
     }
 }
