@@ -22,7 +22,6 @@ public class InstantiateInputs : MonoBehaviour
     }
 
 
-    //The following commands do the same as above, but used for voice commands - one to only open, one to only close outputs
     public void OpenOutputs()
     {
         if (!active)
