@@ -8,10 +8,10 @@ using HoloToolkit.Unity.InputModule.Utilities.Interactions;
 
 public class Lock : MonoBehaviour {
 
-    public string anchorName;
+    public WorldAnchorManager worldAnchorManager;
 	// Use this for initialization
 	void Start () {
-        //WorldAnchorManager.Instance.AttachAnchor(this.gameObject, anchorName);
+        worldAnchorManager.AttachAnchor(this.gameObject);
     }
 	
 	// Update is called once per frame
@@ -29,7 +29,7 @@ public class Lock : MonoBehaviour {
         if (gameObject.GetComponent<TwoHandManipulatable>())
             gameObject.GetComponent<TwoHandManipulatable>().enabled = false;
 
-        //WorldAnchorManager.Instance.AttachAnchor(this.gameObject, anchorName);
+        worldAnchorManager.AttachAnchor(this.gameObject);
     }
 
     public void unlockRoot()
@@ -42,6 +42,6 @@ public class Lock : MonoBehaviour {
         if (gameObject.GetComponent<TwoHandManipulatable>())
             gameObject.GetComponent<TwoHandManipulatable>().enabled = true;
 
-        //WorldAnchorManager.Instance.RemoveAnchor(this.gameObject);
+        worldAnchorManager.RemoveAnchor(this.gameObject);
     }
 }
