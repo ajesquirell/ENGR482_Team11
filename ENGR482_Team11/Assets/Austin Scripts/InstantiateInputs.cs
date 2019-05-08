@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using HoloToolkit.Unity.InputModule;
 
-public class InstantiateInputs : MonoBehaviour
+public class InstantiateInputs : MonoBehaviour, IInputClickHandler
 {
 
     public GameObject rootHologram;
@@ -22,7 +22,7 @@ public class InstantiateInputs : MonoBehaviour
     }
 
 
-    public void OpenOutputs()
+    public void OpenInputs()
     {
         if (!active)
         {
@@ -35,7 +35,7 @@ public class InstantiateInputs : MonoBehaviour
         }
     }
 
-    public void CloseOutputs()
+    public void CloseInputs()
     {
         if (active)
         {
@@ -45,8 +45,20 @@ public class InstantiateInputs : MonoBehaviour
         }
     }
 
+    public void ToggleInputs()
+    {
+        if (!active)
+        {
+            OpenInputs();
+        }
+        else
+        {
+            CloseInputs();
+        }
+    }
 
-
-
-
+    public void OnInputClicked(InputClickedEventData eventData)
+    {
+        ToggleInputs();
+    }
 }
