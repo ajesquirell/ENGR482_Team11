@@ -51,13 +51,14 @@ GameObject:
   - component: {fileID: 114389880458444020}
   - component: {fileID: 114461140241657046}
   - component: {fileID: 114983056081765416}
+  - component: {fileID: 114240216111742804}
   m_Layer: 5
   m_Name: Root Hologram BWR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1386552242334512
 GameObject:
   m_ObjectHideFlags: 1
@@ -354,7 +355,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1761671496445466}
-  m_Text: 'Station 3: BWR'
+  m_Text: 'Station 4: BWR'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -429,6 +430,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Profile: {fileID: 11400000, guid: f9af5d824507da24b8bbd97f4948aec7, type: 2}
   audioSource: {fileID: 0}
+--- !u!114 &114240216111742804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1216681791409158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e2cd30934665c4b835d469e879117d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootHologram: {fileID: 0}
+  active: 0
 --- !u!114 &114378986138664482
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -535,7 +549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Keywords:
-  - Keyword: Open three
+  - Keyword: Open four
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -552,7 +566,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Close three
+  - Keyword: Close four
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -569,7 +583,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Lock three
+  - Keyword: Lock four
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -586,7 +600,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Unlock three
+  - Keyword: Unlock four
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -655,3 +669,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b78c0d1b3230a94d8586beb5f7b36b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anchorName: 

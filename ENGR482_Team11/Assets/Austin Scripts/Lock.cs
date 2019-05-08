@@ -35,8 +35,8 @@ public class Lock : MonoBehaviour {
     public void unlockRoot()
     {
         
-        //if (gameObject.GetComponent<HandDraggable>())
-        //    gameObject.GetComponent<HandDraggable>().enabled = true;
+        if (gameObject.GetComponent<HandDraggable>())
+            gameObject.GetComponent<HandDraggable>().enabled = true;
         //if (gameObject.GetComponent<BoundingBoxRig>())
         //    gameObject.GetComponent<BoundingBoxRig>().enabled = true;
         if (gameObject.GetComponent<TwoHandManipulatable>())

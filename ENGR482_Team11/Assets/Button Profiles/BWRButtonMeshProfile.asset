@@ -20,7 +20,7 @@ MonoBehaviour:
   ButtonStates:
   - Name: Pressed
     ActiveState: 0
-    StateColor: {r: 0, g: 0, b: 0, a: 0}
+    StateColor: {r: 0, g: 0.10980392, b: 0.6392157, a: 0}
     StateValue: 0
     Offset: {x: 0, y: 0, z: 0}
     Scale: {x: 1, y: 1, z: 1}

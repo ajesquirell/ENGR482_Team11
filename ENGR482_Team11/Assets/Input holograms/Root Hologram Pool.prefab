@@ -90,7 +90,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1722449241059862
 GameObject:
   m_ObjectHideFlags: 1
@@ -365,7 +365,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1457347305932218}
-  m_Text: 'Station 2: Pool'
+  m_Text: 'Station 3: Pool'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -470,6 +470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b78c0d1b3230a94d8586beb5f7b36b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anchorName: 
 --- !u!114 &114402484298982874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -494,7 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 812df1cb6676fec4c89a6c8f080c2e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outputCollection: {fileID: 1816312972018992, guid: 7ffc725e5f849a04fa8dc9ec74f33a7d,
+  outputCollection: {fileID: 1243219868549508, guid: 1cfe50f79073b4045a7d33c8624d0a14,
     type: 2}
 --- !u!114 &114655086124507316
 MonoBehaviour:
@@ -540,7 +541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Keywords:
-  - Keyword: Open two
+  - Keyword: Open three
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -557,7 +558,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Close two
+  - Keyword: Close three
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -574,7 +575,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Lock two
+  - Keyword: Lock three
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -591,7 +592,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Unlock two
+  - Keyword: Unlock three
     Response:
       m_PersistentCalls:
         m_Calls:
