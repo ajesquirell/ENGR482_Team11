@@ -9,9 +9,12 @@ using HoloToolkit.Unity.InputModule.Utilities.Interactions;
 public class Lock : MonoBehaviour {
 
     public WorldAnchorManager worldAnchorManager;
+    private string savedAnchor; //Only used at Start() to check if anchor exists, so we can enable the gameObject in the scene. If the user does not want the object in scene, they will "unlock" object (remove its worldanchor)
 	// Use this for initialization
 	void Start () {
-        worldAnchorManager.AttachAnchor(this.gameObject);
+        savedAnchor = worldAnchorManager.AttachAnchor(this.gameObject);
+        if (savedAnchor != null)
+            this.gameObject.SetActive(true);
     }
 	
 	// Update is called once per frame
