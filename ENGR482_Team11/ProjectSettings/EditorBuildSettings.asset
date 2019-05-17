@@ -14,3 +14,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/HoloToolkit-Examples/Input/Scenes/SpeechInputSource.unity
     guid: 59c2a9c2958b46f4299e5a8488eabf01
+  - enabled: 0
+    path: Assets/HoloToolkit-Examples/Utilities/Scenes/SolverExamples.unity
+    guid: 3d14f0ca215257247af313094255af93
+  - enabled: 0
+    path: Assets/HoloToolkit-Examples/SpatialMapping/Scenes/SpatialProcessingSurfaceMagnetism.unity
+    guid: d890c37757f470e4085bc16dc04f6b85
