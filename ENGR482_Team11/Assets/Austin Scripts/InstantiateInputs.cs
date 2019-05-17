@@ -7,12 +7,12 @@ public class InstantiateInputs : MonoBehaviour, IInputClickHandler
 {
 
     public GameObject rootHologram;
-    public bool active = false; //Meaning root hologram this goes along with shouldn't be in the scene
+    public bool active;
 
     // Use this for initialization
     void Start()
     {
-
+        active = this.gameObject.activeSelf;
     }
 
     // Update is called once per frame

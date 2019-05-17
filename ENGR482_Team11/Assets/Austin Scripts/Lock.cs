@@ -5,20 +5,30 @@ using HoloToolkit.Unity.InputModule;
 using HoloToolkit.Unity;
 using HoloToolkit.Unity.UX;
 using HoloToolkit.Unity.InputModule.Utilities.Interactions;
+using UnityEngine.XR.WSA;
 
 public class Lock : MonoBehaviour {
 
     public WorldAnchorManager worldAnchorManager;
-    private string savedAnchor; //Only used at Start() to check if anchor exists, so we can enable the gameObject in the scene. If the user does not want the object in scene, they will "unlock" object (remove its worldanchor)
+    //private string savedAnchorName; //Only used at Start() to check if anchor exists, so we can enable the gameObject in the scene. If the user does not want the object in scene, they will "unlock" object (remove its worldanchor)
 	// Use this for initialization
 	void Start () {
-        savedAnchor = worldAnchorManager.AttachAnchor(this.gameObject);
-        if (savedAnchor != null)
-            this.gameObject.SetActive(true);
+
+        worldAnchorManager.AttachAnchor(gameObject); //Attempt to find anchor, and place object at that location
+
+        //// Try to load a previously saved world anchor (Partly taken from WorldAnchorManager Code from Microsoft)
+        //WorldAnchor savedAnchor = worldAnchorManager.AnchorStore.Load(string.Empty,this.gameObject);
+
+        //if (savedAnchor != null) //If we have saved the location of this object, then show it in the scene and place in correct location
+        //{
+        //    this.gameObject.SetActive(true);
+        //    worldAnchorManager.AttachAnchor(this.gameObject);
+        //}
+
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 
@@ -32,7 +42,7 @@ public class Lock : MonoBehaviour {
         if (gameObject.GetComponent<TwoHandManipulatable>())
             gameObject.GetComponent<TwoHandManipulatable>().enabled = false;
 
-        worldAnchorManager.AttachAnchor(this.gameObject);
+        worldAnchorManager.AttachAnchor(gameObject);
     }
 
     public void unlockRoot()
@@ -45,6 +55,6 @@ public class Lock : MonoBehaviour {
         if (gameObject.GetComponent<TwoHandManipulatable>())
             gameObject.GetComponent<TwoHandManipulatable>().enabled = true;
 
-        worldAnchorManager.RemoveAnchor(this.gameObject);
+        worldAnchorManager.RemoveAnchor(gameObject);
     }
 }

@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HoloToolkit.Unity.InputModule;
 
-public class OkayGone : MonoBehaviour {
+public class OkayGone : MonoBehaviour, IInputClickHandler {
 
 	// Use this for initialization
 	void Start () {
@@ -17,5 +18,10 @@ public class OkayGone : MonoBehaviour {
     public void DestroyObj()
     {
         Destroy(this.gameObject);
+    }
+
+    public void OnInputClicked(InputClickedEventData eventData)
+    {
+        DestroyObj();
     }
 }

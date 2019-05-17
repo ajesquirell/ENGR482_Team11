@@ -15,7 +15,7 @@ PlayerSettings:
   productName: TTC Tour Experience
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 1, g: 0, b: 0, a: 1}
+  m_SplashScreenBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
@@ -38,10 +38,8 @@ PlayerSettings:
     y: 0
     width: 1
     height: 1
-  m_SplashScreenLogos:
-  - logo: {fileID: 21300000, guid: f443f1e65134b5346b788ba9dd4702ff, type: 3}
-    duration: 2
-  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: f443f1e65134b5346b788ba9dd4702ff,
+  m_SplashScreenLogos: []
+  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: 374a9feffa9d5054bb7893b708d6a9ec,
     type: 3}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
@@ -262,7 +260,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 26712195eae8f7e45a797a60d1159311, type: 3}
+      m_Icon: {fileID: 2800000, guid: 517a5268112b8854e8d807547081e670, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -550,8 +548,7 @@ PlayerSettings:
   psp2InfoBarColor: 0
   psp2ScriptOptimizationLevel: 0
   psmSplashimage: {fileID: 0}
-  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: f443f1e65134b5346b788ba9dd4702ff,
-    type: 3}
+  splashScreenBackgroundSourceLandscape: {fileID: 0}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
   spritePackerPolicy: 
   webGLMemorySize: 256
