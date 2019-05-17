@@ -6,8 +6,12 @@ using HoloToolkit.Unity;
 
 public class OkayGone : MonoBehaviour, IInputClickHandler {
 
-	// Use this for initialization
-	void Start () {
+    public GameObject AirTapHelper1;
+    public GameObject AirTapHelper2;
+    public GameObject AirTapHelper3;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -21,10 +25,13 @@ public class OkayGone : MonoBehaviour, IInputClickHandler {
         Destroy(this.gameObject);
     }
 
-    public void RemoveSurfaceMag()
+    public void RemoveSurfaceMag() //Also enable the Air Tap Helpers
     {
         if (gameObject.GetComponent<SolverSurfaceMagnetism>())
             gameObject.GetComponent<SolverSurfaceMagnetism>().enabled = false;
+        AirTapHelper1.SetActive(true);
+        AirTapHelper2.SetActive(true);
+        AirTapHelper3.SetActive(true);
     }
 
     public void OnInputClicked(InputClickedEventData eventData)
