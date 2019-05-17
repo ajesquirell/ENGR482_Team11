@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114365117638927468}
   - component: {fileID: 328091111378497342}
   - component: {fileID: 82185964219050832}
+  - component: {fileID: 114474056203037730}
   m_Layer: 0
   m_Name: Intro Video Plate
   m_TagString: Untagged
@@ -343,6 +344,17 @@ MonoBehaviour:
   manipulationMode: 2
   rotationConstraint: 0
   enableOneHandMovement: 1
+--- !u!114 &114474056203037730
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1045677529724026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5efa7075923535e4898067339cae7b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114927951644433616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -406,7 +418,7 @@ MonoBehaviour:
   maxScale: 2
   rotationType: 0
   handMotionToRotate: 1
-  rotateAroundPivot: 0
+  rotateAroundPivot: 1
   boundingBoxPrefab: {fileID: 114030465538688920, guid: 865a8ded6c47efd4285f04f3aebe99e9,
     type: 2}
   appBarPrefab: {fileID: 114050950401502068, guid: aa610ada334bff640a535f0d23a9a15c,

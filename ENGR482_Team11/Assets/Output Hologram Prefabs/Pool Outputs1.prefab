@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 114458795573380378}
   - component: {fileID: 328841995009591450}
   - component: {fileID: 82826067887500210}
+  - component: {fileID: 114595685994951066}
   m_Layer: 0
   m_Name: Pool Video Plate
   m_TagString: Untagged
@@ -907,7 +908,7 @@ MonoBehaviour:
   maxScale: 2
   rotationType: 0
   handMotionToRotate: 1
-  rotateAroundPivot: 0
+  rotateAroundPivot: 1
   boundingBoxPrefab: {fileID: 114030465538688920, guid: 865a8ded6c47efd4285f04f3aebe99e9,
     type: 2}
   appBarPrefab: {fileID: 114050950401502068, guid: aa610ada334bff640a535f0d23a9a15c,
@@ -965,7 +966,7 @@ MonoBehaviour:
   maxScale: 2
   rotationType: 0
   handMotionToRotate: 1
-  rotateAroundPivot: 0
+  rotateAroundPivot: 1
   boundingBoxPrefab: {fileID: 114030465538688920, guid: 865a8ded6c47efd4285f04f3aebe99e9,
     type: 2}
   appBarPrefab: {fileID: 114050950401502068, guid: aa610ada334bff640a535f0d23a9a15c,
@@ -986,6 +987,17 @@ MonoBehaviour:
   manipulationMode: 6
   rotationConstraint: 2
   enableOneHandMovement: 1
+--- !u!114 &114595685994951066
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1620478879318440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5efa7075923535e4898067339cae7b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114665937390377664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1007,7 +1019,7 @@ MonoBehaviour:
   maxScale: 2
   rotationType: 0
   handMotionToRotate: 1
-  rotateAroundPivot: 0
+  rotateAroundPivot: 1
   boundingBoxPrefab: {fileID: 114030465538688920, guid: 865a8ded6c47efd4285f04f3aebe99e9,
     type: 2}
   appBarPrefab: {fileID: 114050950401502068, guid: aa610ada334bff640a535f0d23a9a15c,
@@ -1033,7 +1045,7 @@ MonoBehaviour:
   maxScale: 2
   rotationType: 0
   handMotionToRotate: 1
-  rotateAroundPivot: 0
+  rotateAroundPivot: 1
   boundingBoxPrefab: {fileID: 114030465538688920, guid: 865a8ded6c47efd4285f04f3aebe99e9,
     type: 2}
   appBarPrefab: {fileID: 114050950401502068, guid: aa610ada334bff640a535f0d23a9a15c,
@@ -1101,7 +1113,7 @@ MonoBehaviour:
   maxScale: 2
   rotationType: 0
   handMotionToRotate: 1
-  rotateAroundPivot: 0
+  rotateAroundPivot: 1
   boundingBoxPrefab: {fileID: 114030465538688920, guid: 865a8ded6c47efd4285f04f3aebe99e9,
     type: 2}
   appBarPrefab: {fileID: 114050950401502068, guid: aa610ada334bff640a535f0d23a9a15c,

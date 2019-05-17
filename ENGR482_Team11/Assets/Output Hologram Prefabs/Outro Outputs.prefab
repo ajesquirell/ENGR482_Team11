@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 114909907443676368}
   - component: {fileID: 328266600692433598}
   - component: {fileID: 82979913385711274}
+  - component: {fileID: 114769606659562256}
   m_Layer: 0
   m_Name: Outro Video Plate
   m_TagString: Untagged
@@ -250,6 +251,17 @@ MonoBehaviour:
     type: 2}
   appBarPrefab: {fileID: 114050950401502068, guid: aa610ada334bff640a535f0d23a9a15c,
     type: 2}
+--- !u!114 &114769606659562256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1311503825590366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5efa7075923535e4898067339cae7b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114909907443676368
 MonoBehaviour:
   m_ObjectHideFlags: 1

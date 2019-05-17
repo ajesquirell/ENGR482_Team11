@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using HoloToolkit.Unity.InputModule;
+using HoloToolkit.Unity;
 
 public class OkayGone : MonoBehaviour, IInputClickHandler {
 
@@ -18,6 +19,12 @@ public class OkayGone : MonoBehaviour, IInputClickHandler {
     public void DestroyObj()
     {
         Destroy(this.gameObject);
+    }
+
+    public void RemoveSurfaceMag()
+    {
+        if (gameObject.GetComponent<SolverSurfaceMagnetism>())
+            gameObject.GetComponent<SolverSurfaceMagnetism>().enabled = false;
     }
 
     public void OnInputClicked(InputClickedEventData eventData)

@@ -63,6 +63,7 @@ GameObject:
   - component: {fileID: 114421938108513824}
   - component: {fileID: 114041766778801668}
   - component: {fileID: 82508076018070014}
+  - component: {fileID: 114751570284613096}
   m_Layer: 0
   m_Name: Head Video Plane
   m_TagString: Untagged
@@ -989,8 +990,8 @@ MonoBehaviour:
   appBarHoverOffsetZ: 0.05
   maxScale: 2
   rotationType: 0
-  handMotionToRotate: 0
-  rotateAroundPivot: 0
+  handMotionToRotate: 1
+  rotateAroundPivot: 1
   boundingBoxPrefab: {fileID: 114030465538688920, guid: 865a8ded6c47efd4285f04f3aebe99e9,
     type: 2}
   appBarPrefab: {fileID: 114050950401502068, guid: aa610ada334bff640a535f0d23a9a15c,
@@ -1015,8 +1016,8 @@ MonoBehaviour:
   appBarHoverOffsetZ: 0.05
   maxScale: 2
   rotationType: 0
-  handMotionToRotate: 0
-  rotateAroundPivot: 0
+  handMotionToRotate: 1
+  rotateAroundPivot: 1
   boundingBoxPrefab: {fileID: 114030465538688920, guid: 865a8ded6c47efd4285f04f3aebe99e9,
     type: 2}
   appBarPrefab: {fileID: 114050950401502068, guid: aa610ada334bff640a535f0d23a9a15c,
@@ -1041,8 +1042,8 @@ MonoBehaviour:
   appBarHoverOffsetZ: 0.05
   maxScale: 2
   rotationType: 0
-  handMotionToRotate: 0
-  rotateAroundPivot: 0
+  handMotionToRotate: 1
+  rotateAroundPivot: 1
   boundingBoxPrefab: {fileID: 114030465538688920, guid: 865a8ded6c47efd4285f04f3aebe99e9,
     type: 2}
   appBarPrefab: {fileID: 114050950401502068, guid: aa610ada334bff640a535f0d23a9a15c,
@@ -1067,8 +1068,8 @@ MonoBehaviour:
   appBarHoverOffsetZ: 0.05
   maxScale: 2
   rotationType: 0
-  handMotionToRotate: 0
-  rotateAroundPivot: 0
+  handMotionToRotate: 1
+  rotateAroundPivot: 1
   boundingBoxPrefab: {fileID: 114030465538688920, guid: 865a8ded6c47efd4285f04f3aebe99e9,
     type: 2}
   appBarPrefab: {fileID: 114050950401502068, guid: aa610ada334bff640a535f0d23a9a15c,
@@ -1093,8 +1094,8 @@ MonoBehaviour:
   appBarHoverOffsetZ: 0.05
   maxScale: 2
   rotationType: 0
-  handMotionToRotate: 0
-  rotateAroundPivot: 0
+  handMotionToRotate: 1
+  rotateAroundPivot: 1
   boundingBoxPrefab: {fileID: 114030465538688920, guid: 865a8ded6c47efd4285f04f3aebe99e9,
     type: 2}
   appBarPrefab: {fileID: 114050950401502068, guid: aa610ada334bff640a535f0d23a9a15c,
@@ -1163,6 +1164,17 @@ MonoBehaviour:
   manipulationMode: 7
   rotationConstraint: 2
   enableOneHandMovement: 1
+--- !u!114 &114751570284613096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1402076385474546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5efa7075923535e4898067339cae7b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114820776855593590
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1247,8 +1259,8 @@ MonoBehaviour:
   appBarHoverOffsetZ: 0.05
   maxScale: 2
   rotationType: 0
-  handMotionToRotate: 0
-  rotateAroundPivot: 0
+  handMotionToRotate: 1
+  rotateAroundPivot: 1
   boundingBoxPrefab: {fileID: 114030465538688920, guid: 865a8ded6c47efd4285f04f3aebe99e9,
     type: 2}
   appBarPrefab: {fileID: 114050950401502068, guid: aa610ada334bff640a535f0d23a9a15c,
