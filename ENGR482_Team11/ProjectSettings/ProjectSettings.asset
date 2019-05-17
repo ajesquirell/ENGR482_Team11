@@ -39,7 +39,7 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos: []
-  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: 374a9feffa9d5054bb7893b708d6a9ec,
+  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: e977bab5c1cb7cb4db782504a24465ba,
     type: 3}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
@@ -582,7 +582,14 @@ PlayerSettings:
   metroCertificateIssuer: DefaultCompany
   metroCertificateNotAfter: 8032cca6d8ded501
   metroApplicationDescription: By Austin Esquirell from Liberty University
-  wsaImages: {}
+  wsaImages:
+    65636: Assets/Media/ObjectCollectionSphere50x50.png
+    131272: Assets/Media/Framatome1240x600.png
+    2031816: Assets/Media/ObjectCollectionSphere88x88.png
+    2097352: Assets/Media/ObjectCollectionSphere142x142.png
+    2162888: Assets/Media/ObjectCollectionSphere300.png
+    2228424: Assets/Media/ObjectCollectionSphere620.png
+    2293960: Assets/Media/Framatome620x300.png
   metroTileShortName: TTC Tour
   metroCommandLineArgsFile: 
   metroTileShowName: 0
