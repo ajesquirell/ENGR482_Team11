@@ -575,13 +575,14 @@ PlayerSettings:
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: TTCTourExperience
-  metroPackageVersion: 1.0.3.0
+  metroPackageVersion: 2.1.0.0
   metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
   metroCertificateNotAfter: 8032cca6d8ded501
-  metroApplicationDescription: By Austin Esquirell from Liberty University
+  metroApplicationDescription: Tour Experience of Framatome's Technical Training Center.
+    By Austin Esquirell from Liberty University
   wsaImages:
     65636: Assets/Media/ObjectCollectionSphere50x50.png
     131272: Assets/Media/Framatome1240x600.png
